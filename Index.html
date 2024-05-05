@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/43cbb28d80.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- home -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./images/logo.png" alt="logo" class="logo" />
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contacts</a></li>
+            <i class="fa-solid fa-xmark" onclick="close_menu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="open_menu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>
+            Hi, I'm <span>Yugmani</span> <strong>Dahal</strong> <br />
+            From Nepal
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+      `
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/user.png" alt="user image" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              I am YugmaniDahal. I am 10 years old and was born on May 2nd,
+              2013. I study in Gems school section 5 ‘E’. My hobbies are
+              programming, 3d modeling, modding, chess, etc. My favorite sport
+              is basketball.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web development</span> <br />Web application
+                  developement
+                </li>
+                <li>
+                  <span>Game Making</span> <br />Using Unity <br />Using Game
+                  Maker <br />Using Scratch <br />Using codesters
+                </li>
+                <li><span>Player</span>Chess player</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2022</span> <br />Scratch coding competition</li>
+                <li><span>2023</span> <br />Cubes in Space</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020 - Present</span> <br />Gems School, Dhapakhel,
+                  Lalitpur
+                </li>
+                <li>
+                  <span>2017 - 2019</span> <br />United School, Satdobato,
+                  Lalitpur
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portflio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="work image" />
+            <div class="layer">
+              <h3>E=mc2 Calculator</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
+                suscipit.
+              </p>
+              <a
+                href="https://www.codesters.com/preview/ce10a6baf66d4852bff60eb68722126c/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="work image" />
+            <div class="layer">
+              <h3>Website 1rst</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
+                suscipit.
+              </p>
+              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="work image" />
+            <div class="layer">
+              <h3>Website 2nd</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
+                suscipit.
+              </p>
+              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>codlerial9@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9876052268</p>
+            <div class="social-icons">
+            <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="github.com"><i class="fa-brands fa-github"></i></a>
+        </div>
+          </div>    
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your-Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your-Email"
+                require/>
+              <textarea name="Message" placeholder="Write your message..." rows="6"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="suc-message"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &#169 YugmaniDahal. Made with <i class="fa-regular fa-heart"></i>  By YugmaniDahal</p>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
